@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700&subset=cyrillic');
+
+/*-------------------- GENERAL ------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper-inner {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+header .wrapper-inner,
+footer .wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-phone {
+    position: relative;
+    margin: 0 0 5px 0;
+    transition: .4s;
+}
+
+.contacts-phone .icon_phone {
+    visibility: hidden;
+    background: url('images/icon_phone.png') no-repeat;
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.contacts a,
+.contacts-phone span {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.contacts-phone span {
+    color: #d53b3b;
+}
+
+.contacts p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contacts-phone:hover {
+    color: #d53b3b;
+}
+
+.contacts-phone:hover .icon_phone {
+   visibility: visible;
+}
+
+/*-------------------- HEADER ------------------------*/
+header[role = 'banner'] {
+    padding: 23px 0;
+}
+
+.header-logo {
+    display: block;
+    background: url('images/logo.png');
+    width: 231px;
+    height: 56px;
+    transition: .5s;
+}
+
+.header-menu li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.header-menu a {
+    font-size: 17px;
+    font-weight: 700;
+    transition: color .3s;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 55px;
+    width: 175px;
+    height: 55px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.button-red {
+    background: radial-gradient(closest-side at center , rgba(255,255,255,0.2), transparent),
+                url('images/button_red.png') no-repeat;
+    transition: .4s;
+}
+
+.button-black {
+    background: radial-gradient(closest-side at center, rgba(255, 255, 255, 0.2), transparent),
+                url('images/button_black.png') no-repeat;
+
+}
+
+.header-logo:hover {
+    background: url('images/logo1.png');
+}
+
+.header-menu a:hover {
+    color: #7b7a7a;
+    border-bottom: 2px solid black;
+}
+
+.button-red:hover {
+    background: radial-gradient(closest-side at center , rgba(255,255,255,0.5), transparent),
+                url('images/button_red.png') no-repeat;
+}
+
+.button-black:hover {
+    background: radial-gradient(closest-side at center, rgba(255, 255, 255, 0.4), transparent),
+                url('images/button_black.png') no-repeat;
+}
+/*-------------------- MAIN ------------------------*/
+
+main {
+    position: relative;
+    padding: 93px 0 0 0;
+    height: 110vh;
+    background: url(images/background.png) no-repeat center top;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 92px 0;
+}
+
+h1 {
+    position: relative;
+    font-size: 57px;
+    font-weight: 700;
+    color: white;
+    z-index: 1;
+}
+
+h1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 120px;
+    top: -20px;
+    left: -50px;
+    background: radial-gradient(circle closest-side at center , #262424,  transparent);
+    z-index: -1;
+}
+
+.main-info p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.main-info .button-black {
+    margin: 0 0 0 12px;
+}
+
+.main-info .button-red {
+    margin: 0 12px 0 12px;
+}
+
+h2 {
+    margin: 0 0 35px 0;
+    color: #db3232;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners .partners_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 140px;
+    margin: 0 0 15px 0;
+    background: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.logo_doom {
+    display: block;
+    background: url('images/logo_doom.png');
+    width: 84px;
+    height: 52px;
+}
+
+.logo_mario {
+    display: block;
+    background: url('images/logo_mario.png');
+    width: 105px;
+    height: 60px;
+}
+
+.logo_StreetFighter {
+    display: block;
+    background: url('images/logo_StreetFighter.png');
+    width: 113px;
+    height: 66px;
+}
+
+.logo_pokemon {
+    display: block;
+    background: url('images/logo_pokemon.png');
+    width: 102px;
+    height: 39px;
+}
+
+.logo_BrutalLegend {
+    display: block;
+    background: url('images/logo_BrutalLegend.png');
+    width: 115px;
+    height: 48px;
+}
+
+.partners span {
+    color: white;
+}
+
+.partners .partners_logo:hover {
+    box-shadow: inset 0 0 5px 4px #d53b3b;
+}
+
+.partners span:hover {
+    border-bottom: 1px solid white;
+}
+
+/*-------------------- FOOTER ------------------------*/
+
+footer[role = 'contentinfo'] {
+    position: absolute;
+    bottom: -75px;
+    padding: 34px 0;
+    background: url(images/footer_background.png) no-repeat;
+    width: 100%;
+}
+
+.logo-copyright {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    display: block;
+    background: url('images/logo_footer.png');
+    width: 41px;
+    height: 36px;
+    margin: 0 15px 0 0;
+    transition: .5s;
+}
+
+.footer-logo:hover {
+    background: url('images/logo_footer1.png');
+}
