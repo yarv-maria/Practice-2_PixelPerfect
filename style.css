@@ -71,6 +71,7 @@ ul {
 .contacts p {
     font-size: 14px;
     font-weight: 400;
+    color: #334247;
 }
 
 .contacts-phone:hover {
@@ -301,7 +302,10 @@ footer[role = 'contentinfo'] {
 .logo-copyright {
     display: flex;
     align-items: center;
-    font-size: 20px;
+}
+
+.logo-copyright p {
+    font-size: 12px;
     font-weight: 600;
 }
 
