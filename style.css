@@ -130,8 +130,9 @@ header[role = 'banner'] {
 }
 
 .button-black {
-    background: radial-gradient(closest-side at center, rgba(255, 255, 255, 0.1), transparent),
+    background: radial-gradient(closest-side at center, rgba(255, 255, 255, 0.15), transparent) center center no-repeat,
                 url('images/button_black.png') no-repeat;
+    background-size: 170px 45px, auto auto;
 
 }
 
@@ -145,20 +146,22 @@ header[role = 'banner'] {
 }
 
 .button-red:hover {
-    background: radial-gradient(closest-side at center , rgba(255,255,255,0), transparent),
+    background: radial-gradient(closest-side at center , rgba(255,255,255,0), transparent) center center no-repeat,
                 url('images/button_red.png') no-repeat;
+    background-size: 170px 45px, auto auto;
 }
 
 .button-black:hover {
-    background: radial-gradient(closest-side at center, rgba(255, 255, 255, 0.2), transparent),
+    background: radial-gradient(closest-side at center, rgba(255, 255, 255, 0), transparent) center center no-repeat,
                 url('images/button_black.png') no-repeat;
+    background-size: 170px 45px, auto auto;
 }
 /*-------------------- MAIN ------------------------*/
 
 main {
     position: relative;
     background: url(images/background.png) no-repeat center top;
-    padding: 93px 0 121px 0;
+    padding: 93px 0 155px 0;
 }
 
 .main-info {
@@ -289,7 +292,7 @@ h2 {
 
 footer[role = 'contentinfo'] {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     height: 121px;
     background: url(images/footer_background.png) no-repeat;
     width: 100%;
